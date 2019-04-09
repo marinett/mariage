@@ -166,27 +166,31 @@
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Are You Attending?</h2>
-					<p>Please Fill-up the form to notify you that you're attending. Thanks.</p>
+					<h2>Vous souhaitez nous contacter ?</h2>
+					<p>Besoin d'infos, ou juste pour une petit mot doux...</p>
 				</div>
 			</div>
 			<div class="row animate-box">
 				<div class="col-md-10 col-md-offset-1">
-					<form class="form-inline">
+					<form class="form-inline" action="https://formspree.io/jeremi.dsql@e.email" method="POST">
+                                                <input type="hidden" name="_language" value="fr" />
+                                                <input type="hidden" name="_subject" value="Marie & Jérémi - Mariage" />
+                                                <input type="hidden" name="_format" value="plain" />
+                                                <input type="hidden" name="_next" value="//marie.jeremi.biz" />
 						<div class="col-md-4 col-sm-4">
 							<div class="form-group">
-								<label for="name" class="sr-only">Name</label>
-								<input type="name" class="form-control" id="name" placeholder="Name">
+								<label for="message" class="sr-only">Votre message</label>
+								<input type="message" name="message" class="form-control" id="message" placeholder="Votre message">
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-4">
 							<div class="form-group">
-								<label for="email" class="sr-only">Email</label>
-								<input type="email" class="form-control" id="email" placeholder="Email">
+								<label for="email" class="sr-only">Et votre adresse email</label>
+								<input type="email" name="Email" class="form-control" id="email" placeholder="Et votre adresse email">
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-4">
-							<button type="submit" class="btn btn-default btn-block">I am Attending</button>
+							<button type="submit" class="btn btn-default btn-block">Et on clic ici !</button>
 						</div>
 					</form>
 				</div>
